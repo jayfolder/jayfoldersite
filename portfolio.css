@@ -1,14 +1,22 @@
 .project{
-  width: 350px;
+  width: 100%;
   flex-direction: column;
   display: flex;
   font-family: 'Times New Roman', Times, serif;
   color:blue;
 }
 
-.project_table, .project_table > *{
-  display: flex;
-  margin: 15px;
+.project > img{
+  outline: solid 4px blue;
+}
+
+.project_table{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.project_table{
+  gap: 20px;
 }
 
 img{
@@ -16,5 +24,5 @@ img{
 }
 
 img:hover{
-  scale: 1.03;
+  scale: 1.02;
 }
