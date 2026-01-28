@@ -1,0 +1,65 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: rgb(241, 241, 255);
+  color: black;
+  font-family: Verdana;
+  height: 100%;
+  overflow: hidden;
+}
+
+.center, .center > *{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh; 
+  flex-direction: column;
+  }
+  
+.fadeIn{
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+.interactable, .interactable_c > * {
+  cursor: pointer;
+}
+
+@keyframes fadeIn{
+  
+  0% {
+  opacity: 0; 
+  transform: translateY(5%);
+  }
+
+  
+  100% {
+    opacity: 1; 
+    transform: translateY(0%);
+  }
+}
+
+.content > *{
+  margin-bottom: 10px;
+}
+
+.button{
+  background-color: white;
+  padding: 15px;
+  border: solid #0000FF 4px;
+  color: #0000FF;
+  margin-top: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.button:hover{
+  text-decoration: none;
+}

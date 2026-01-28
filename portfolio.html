@@ -4,15 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jayfolder</title>
-    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="global.css" rel="stylesheet" type="text/css" media="all">
+    <link href="portfolio.css" rel="stylesheet" type="text/css" media="all">
     <script src="script.js" defer=""></script>
   </head>
   <body>
     
   <div class="center fadeIn"> <!-- for centering -->
-    <div class="content" style="width: 800px;">
-      test test
-      <img src="https://media.discordapp.net/attachments/1405563935842894005/1463869519272476757/image0.jpg?ex=6973663a&is=697214ba&hm=6d97052427ef17ed570a73450b8bff9075bf5ca7989e7476af509ca2d0e8237b&=&format=webp&width=618&height=888"></img>
+    <div class="content" style="width: 1000px;">
+
+      <div style="width: 100%;">
+        <span style="color: blue; font-family: 'Times New Roman', Times, serif; font-size: 27px;">personal projects</span>
+        <hr color="blue">
+      </div>
+
+      <div class="project_table">
+        <div class="project"> <!-- this is one game-->
+          <img onclick="move_page('weezer','blank')" class="interactable" style="border: solid 5px blue;" src="weezer.gif"></img>
+            <span style="font-size: 27px; padding-top: 5px;">five albums at weezers</span><br>
+            parody fnaf fan-made game i made surrounded around the Weezer band
+          </div> <!-- end -->
+
+          <div class="project"> <!-- this is one game-->
+          <img onclick="move_page('tbn','blank')" class="interactable" style="border: solid 5px blue;" src="https://m.gjcdn.net/game-thumbnail/1000/850856-49rsjhs6-v4.webp"></img>
+            <span style="font-size: 27px; padding-top: 5px;">the big night</span><br>
+            a custom-night mod of the existing fangame 'big the game' that aims to improve gameplay
+          </div> <!-- end -->
+
+          <div class="project"> <!-- this is one game-->
+          <img onclick="move_page('dsmis3ep1','blank')" class="interactable" style="border: solid 5px blue;" src="https://m.gjcdn.net/fireside-post-image/700/42829377-aap565t9-v4.webp"></img>
+            <span style="font-size: 27px; padding-top: 5px;">dsmis 3 episode 1 recoded</span><br>
+            a complete recode of the existing fangame 'don't scare me i'm scared 3 episode 1' that aims to improve gameplay 
+          </div> <!-- end -->
+
+        </div>
+        <div class="button interactable" onclick="move_page('home','self')">go back</div>
     </div>
   </div>
 </body>

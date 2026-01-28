@@ -1,0 +1,20 @@
+.project{
+  width: 350px;
+  flex-direction: column;
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+  color:blue;
+}
+
+.project_table, .project_table > *{
+  display: flex;
+  margin: 15px;
+}
+
+img{
+  transition: 150ms ease-out;
+}
+
+img:hover{
+  scale: 1.03;
+}

@@ -1,0 +1,31 @@
+.about_textbox{
+  font-size: 20px;
+  color: #0000FF;
+  padding: 10px;
+  display: flex;  
+  flex-direction: row;
+  background-image: url("thing.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: solid blue 5px;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.about_text > *{
+  padding: 10px;
+  padding-top: 40px;
+  font-size: 20px;
+}
+
+.social > * {
+  width: 45px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: auto;
+  transition: 150ms ease-out;
+}
+
+.social > *:hover{
+  scale: 1.05;
+}
