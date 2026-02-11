@@ -18,9 +18,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100dvh; 
   flex-direction: column;
   }
+
+.center{
+  min-height: 100dvh; 
+}
+
   
 .fadeIn{
   animation-name: fadeIn;
