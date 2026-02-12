@@ -2,8 +2,12 @@
   width: 100%;
   flex-direction: column;
   display: flex;
-  font-family: 'Times New Roman', Times, serif;
-  color:blue;
+  font-family: 'Times New Roman', Times, serif; 
+  color: blue;
+}
+
+.project img{
+  border: solid 5px blue;
 }
 
 .project_table > *{
