@@ -1,0 +1,39 @@
+---
+import '../components/global.css';
+import '../components/home.css';
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jayfolder</title>
+    <script>
+    import "../components/script.js";
+  </script>
+  </head>
+
+  <body>  
+  <div class="center fadeIn"> <!-- for centering -->
+    <div class="content" style="width: 800px">
+      <img src="ccc.svg">
+      <div class="social interactable_c">
+          <img src="yt.svg" onclick="move_page('https://www.youtube.com/@jayfolder', 'blank')">
+          <img src="x.svg" onclick="move_page('https://x.com/jayf0lder', 'blank')">
+          <img src="itchio.svg" onclick="move_page('https://jayfolder.itch.io/', 'blank')">  
+          <img src="gamejolt.svg" onclick="move_page('https://gamejolt.com/@jayfolder', 'blank')">   
+        </div>
+      <div class="about_textbox about_text" style="width: 1000px">
+        <div style="width: 700px">
+            <b>my name is jay</b>, i'm a 16-year-old male taking part in creating multiple forms of media, but most notably game development! i program for multiple game projects, create 2D & 3D art/animation, graphic design and video edit! currently studying computer science in college, aiming for a bachelors.
+          </div>
+          <img src="boi.svg" style="height: 170px;padding-left: 50px">
+      </div>
+
+      <button class="button interactable" onclick="move_page('portfolio/index.html', 'self')">check out my portfolio!</button>
+
+    </div>
+  </div>
+</body>
+</html>
