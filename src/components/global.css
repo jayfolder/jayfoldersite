@@ -6,6 +6,11 @@
   height: auto;
 }
 
+html *{
+  color:#0000FF !important;
+  font-family: 'Times New Roman', Times, serif !important;
+}
+
 body {
   background-color: rgb(241, 241, 255);
   color: black;

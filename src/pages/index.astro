@@ -1,15 +1,20 @@
+---
+import '../components/global.css';
+import '../components/home.css';
+---
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jayfolder</title>
-    <link href="global.css" rel="stylesheet" type="text/css" media="all">
-    <link href="home.css" rel="stylesheet" type="text/css" media="all">
-    <script src="script.js" defer=""></script>
+    <script>
+    import "../components/script.js";
+  </script>
   </head>
-  <body>
-    
+
+  <body>  
   <div class="center fadeIn"> <!-- for centering -->
     <div class="content" style="width: 800px">
       <img src="ccc.svg">
@@ -26,7 +31,7 @@
           <img src="boi.svg" style="height: 170px;padding-left: 50px">
       </div>
 
-      <button class="button interactable" onclick="move_page('port', 'self')">check out my portfolio!</button>
+      <button class="button interactable" onclick="move_page('portfolio/index.html', 'self')">check out my portfolio!</button>
 
     </div>
   </div>

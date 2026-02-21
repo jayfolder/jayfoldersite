@@ -28,3 +28,7 @@ img{
 img:hover{
   scale: 1.02;
 }
+
+#shit{
+  position: sticky;
+}

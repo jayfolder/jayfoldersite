@@ -1,0 +1,51 @@
+---
+import '../../components/global.css';
+import '../../components/portfolio.css';
+import PortGame from '../../components/portfolio_game.astro'
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jayfolder</title>
+    <script>
+      import "../../components/script.js";
+    </script>
+  </head>
+  <body>
+  <div class="center fadeIn"> <!-- for centering -->
+    <div class="content" style="width: 1000px; padding-top: 60px; padding-bottom: 110px;">
+
+      <div style="width: 100%;">
+        <span style="font-size: 27px;">personal projects</span>
+        <hr color="blue">
+      </div>
+
+      <div class="project_table">
+          <PortGame name="★ five albums at weezers" link="https://gamejolt.com/games/faaw/846454" description="parody fnaf fan-made game i'm making surrounded around the Weezer band" imgSource="/weezer.gif"/>
+          <PortGame name="the big night" link="https://gamejolt.com/games/TBN/850856" description="a custom-night mod of the existing fangame 'big the game' that aims to improve gameplay" imgSource="https://m.gjcdn.net/game-thumbnail/1000/850856-49rsjhs6-v4.webp"/>
+          <PortGame name="dsmis 3 episode 1 recoded" link="https://gamejolt.com/p/dsmis-3-ep-1-recoded-is-out-now-zcekfzas" description="a complete recode of the existing fangame 'don't scare me i'm scared 3 episode 1' that aims to improve gameplay" imgSource="https://m.gjcdn.net/fireside-post-image/700/42829377-aap565t9-v4.webp"/>
+        </div>
+        <span style="display: inline;">i've also made <a href="https://gamejolt.com/games/outwiththeold/752348" target="_blank">cashgrab at julian's</a>, the <a href="https://gamejolt.com/games/outwiththeold/752348" target="_blank">fnatas launcher,</a> and <a href="https://gamejolt.com/p/data-retrieved-is-now-available-v1-0-1-nrrtj3fz" target="_blank">'data retrieved'</a> for <a href="https://gamejolt.com/games/bthgames/930036" target="_blank">by the hour</a></span>
+
+        <div style="width: 100%;">
+        <span style="font-size: 27px;">projects i've worked on</span>
+        <hr color="blue">
+          </div>
+
+      <div class="project_table">          
+          <PortGame name="playtime with percy" link="https://gamejolt.com/games/PTwP/669217" description="programming assistance, commercial 3d modelling, quality assurance" imgSource="https://m.gjcdn.net/game-thumbnail/1000/669217-mxqdhyex-v4.webp"/>
+          <PortGame name="forgotten at fredbears" link="https://gamejolt.com/games/Forgotten/686230" description="programming assistance" imgSource="https://m.gjcdn.net/game-thumbnail/2000/686230-55ifirbu-v4.webp"/>
+          <PortGame name="golden memory 2" link="https://gamejolt.com/games/GM2/390588" description="programming assistance" imgSource="/gm2.gif"/>
+          <PortGame name="the fazbear facility" link="https://gamejolt.com/games/TheFazbearFacility/708822" description="programming assistance" imgSource="https://m.gjcdn.net/game-thumbnail/4000/708822-7bnzuhjm-v4.webp"/>
+          <PortGame name="repair with freddy's: overtime" link="https://gamejolt.com/games/repairswithfreddy2ot/751822" description="lead programming, quality assurance" imgSource="https://m.gjcdn.net/game-thumbnail/4000/751822-ezq8ibxi-v4.webp"/>
+        </div>
+    </div>
+  </div>
+  <div style="width: 100%; min-height: fit-content; position: fixed; bottom: 30px;" class="center">
+    <div class="button interactable" style="width: fit-content;filter: drop-shadow(0 0 6px rgba(66, 58, 83, 0.45));" onclick="move_page('../index.html','self')">go back</div>
+    </div>
+</body>
+</html>
