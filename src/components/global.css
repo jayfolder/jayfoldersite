@@ -72,3 +72,23 @@ body {
 .button:hover{
   text-decoration: none;
 }
+
+.about_textbox{
+  font-size: 20px;
+  color: #0000FF;
+  padding: 10px;
+  display: flex;  
+  flex-direction: row;
+  background-image: url("thing.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: solid blue 5px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: white;
+}
+
+.about_text > *{
+  padding: 10px;
+  padding-top: 40px;
+  font-size: 20px;
+}
