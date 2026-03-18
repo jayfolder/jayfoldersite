@@ -4,4 +4,4 @@ window.move_page = function(a, b) {
 
 setTimeout(() => {
   document.body.style.overflow = "auto";
-}, 1000);
+}, 1100);

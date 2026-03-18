@@ -5,6 +5,8 @@
     margin-top: 10px;
     flex-direction: row;
     justify-content: unset;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #programs > img{

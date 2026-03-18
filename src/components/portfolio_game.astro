@@ -4,6 +4,22 @@ const {name, imgSource, link, description} = Astro.props;
 
 <div class="project">
     <img onclick={`move_page('${link}','_blank')`} class="interactable" src={imgSource}></img>
-    <span style="font-size: 27px; padding-top: 5px;">{name}</span><br>
+    <span style="font-size: 27px; padding-top: 5px;">{name}</span>
     {description}
     </div> <!-- end -->
+
+<style>
+
+.project{
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  font-family: 'Times New Roman', Times, serif; 
+  color: blue;
+}
+
+.project img{
+  border: solid 5px blue;
+  aspect-ratio: 16 / 9;
+}
+</style>
