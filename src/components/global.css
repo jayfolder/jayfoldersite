@@ -6,17 +6,23 @@
   height: auto;
 }
 
+:root{
+  --main-color: #0000ff;
+}
+
 html *{
-  color:#0000FF !important;
+  color: var(--main-color) !important;
+  border-color: var(--main-color) !important;
   font-family: 'Times New Roman', Times, serif !important;
+  transition: 150ms ease-out;
 }
 
 body {
-  background-color: rgb(241, 241, 255);
+  background-color: #f1f1ff;
   color: black;
   font-family: Verdana;
   height: 100%;
-  overflow: hidden;
+  transition: 150ms ease-out;
 }
 
 ul{
@@ -33,7 +39,6 @@ ul{
 .center{
   min-height: 100dvh; 
 }
-
   
 .fadeIn{
   animation-name: fadeIn;
@@ -65,12 +70,13 @@ ul{
 .button{
   background-color: white;
   padding: 15px;
-  border: solid #0000FF 4px;
-  color: #0000FF;
+  border: solid #0000FF 4px !important;
+  color: #0000FF !important;
   margin-top: 10px;
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
   text-decoration: underline;
+  pointer-events: auto;
 }
 
 .button:hover{
@@ -86,7 +92,7 @@ ul{
   background-image: url("thing.png");
   background-size: contain;
   background-repeat: no-repeat;
-  border: solid blue 5px;
+  border: solid blue 5px !important;
   font-family: 'Times New Roman', Times, serif;
   background-color: white;
 }
@@ -95,4 +101,8 @@ ul{
   padding: 10px;
   padding-top: 40px;
   font-size: 20px;
+}
+
+.about_text > *, b{
+  color: #0000FF !important;
 }

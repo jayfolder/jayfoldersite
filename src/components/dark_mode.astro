@@ -1,0 +1,32 @@
+---
+const {name, imgSource, link, description} = Astro.props;
+---
+
+<div id="dm">
+      <img id="dm_icon" src="moon.svg" style="width: 50px; height: 50px;" class="interactable" onclick="darkMode()">
+      </div>
+
+<style>
+
+#dm{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%; 
+  height: 50px;
+  position: fixed; 
+  bottom: 15px;
+  padding-right: 15px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+#dm_icon{
+  transition: 150ms ease-out;
+  pointer-events: auto;
+}
+
+#dm_icon:hover{
+  scale: 1.02
+}
+
+</style>

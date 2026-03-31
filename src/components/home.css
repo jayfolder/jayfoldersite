@@ -1,3 +1,7 @@
+body{
+  overflow: hidden;
+}
+
 #social > * {
   width: 45px;
   margin-left: 5px;
