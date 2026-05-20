@@ -1,7 +1,7 @@
 var dm = false;
 const bgColor = ["#F1F1FF", "#000074"];
 const textColor = ["#0000ff", "#F1F1FF"]
-const dm_imgs = ["moon.svg", "sun.svg"];
+const dm_imgs = ["../moon.svg", "../sun.svg"];
 const root = document.documentElement;
 const buttons = document.querySelector('.button');
 const textbox = document.querySelector('#textbox');
