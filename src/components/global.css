@@ -6,17 +6,27 @@
   height: auto;
 }
 
+:root{
+  --main-color: #ffffff;
+}
+
 html *{
-  color:#0000FF !important;
+  color: var(--main-color) !important;
+  border-color: var(--main-color) !important;
   font-family: 'Times New Roman', Times, serif !important;
+  transition: 150ms ease-out;
 }
 
 body {
-  background-color: rgb(241, 241, 255);
+  background-color: #f1f1ff;
   color: black;
   font-family: Verdana;
   height: 100%;
-  overflow: hidden;
+  transition: 150ms ease-out;
+}
+
+ul{
+  padding-left: 40px;
 }
 
 .center, .center > *{
@@ -29,7 +39,6 @@ body {
 .center{
   min-height: 100dvh; 
 }
-
   
 .fadeIn{
   animation-name: fadeIn;
@@ -59,7 +68,7 @@ body {
 }
 
 .button{
-  background-color: white;
+  background-color: #FFFFFF;
   padding: 15px;
   border: solid #0000FF 4px;
   color: #0000FF;
@@ -67,8 +76,33 @@ body {
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
   text-decoration: underline;
+  pointer-events: auto;
 }
 
 .button:hover{
   text-decoration: none;
+}
+
+.about_textbox{
+  font-size: 20px;
+  color: #0000FF;
+  padding: 10px;
+  display: flex;  
+  flex-direction: row;
+  background-image: url("thing.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: solid blue 5px !important;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: white;
+}
+
+.about_text > *{
+  padding: 10px;
+  padding-top: 40px;
+  font-size: 20px;
+}
+
+.about_text > *, b{
+  color: #0000FF !important;
 }
