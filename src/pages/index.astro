@@ -2,6 +2,7 @@
 import '../components/global.css';
 import '../components/home.css';
 import DarkMode from '../components/dark_mode.astro';
+import TextBox from '../components/textbox.astro';
 ---
 
 <!DOCTYPE html>
@@ -17,9 +18,9 @@ import DarkMode from '../components/dark_mode.astro';
   </head>
 
   <body>  
-  <div class="center fadeIn"> <!-- for centering -->
+  <div class="center fadeIn">
     <div class="content" style="width: 800px">
-      <img src="ccc.svg"/>
+      <img src="ccc.svg" style="margin: 10px"/>
       <div id="social" class="interactable_c">
           <img src="yt.svg" onclick="move_page('https://www.youtube.com/@jayfolder', 'blank')">
           <img src="x.svg" onclick="move_page('https://x.com/jayf0lder', 'blank')">
@@ -27,15 +28,9 @@ import DarkMode from '../components/dark_mode.astro';
           <img src="itchio.svg" onclick="move_page('https://jayfolder.itch.io/', 'blank')">  
           <img src="gamejolt.svg" onclick="move_page('https://gamejolt.com/@jayfolder', 'blank')">   
         </div>
-      <div class="about_textbox about_text" style="width: 1000px">
-        <div style="width: 700px; font-size: 21px;user-select: none;">
-            <b>my name is jay</b>, a black male creating multiple forms of media, most notably game development! i work on multiple projects, create 2D & 3D art/animation, graphic design and video edit!<br><b>feel free to check out my portfolio!</b>
-          </div>
-          <img src="boi.svg" style="height: 165px;padding-left: 20px;user-drag: none; user-select: none;">
-      </div>
+        <TextBox title="information" image="boi.svg" text="<b>my name is jay</b>, a black male creating multiple forms of media, most notably game development! i work on multiple projects, create 2D & 3D art/animation, graphic design and video edit!<br><b>feel free to check out my portfolio!</b>"/>
       
       <button class="button interactable" onclick="move_page('portfolio', 'self')">check out my portfolio!</button>
-      
     </div>
   </div>
   <DarkMode/>

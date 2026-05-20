@@ -7,7 +7,7 @@
 }
 
 :root{
-  --main-color: #0000ff;
+  --main-color: #ffffff;
 }
 
 html *{
@@ -68,10 +68,10 @@ ul{
 }
 
 .button{
-  background-color: white;
+  background-color: #FFFFFF;
   padding: 15px;
-  border: solid #0000FF 4px !important;
-  color: #0000FF !important;
+  border: solid #0000FF 4px;
+  color: #0000FF;
   margin-top: 10px;
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
