@@ -1,10 +1,6 @@
 var dm = false;
-const bgColor = ["#F1F1FF", "#000074"];
-const textColor = ["#0000ff", "#F1F1FF"]
 const dm_imgs = ["../moon.svg", "../sun.svg"];
 const root = document.documentElement;
-const buttons = document.querySelector('.button');
-const textbox = document.querySelector('#textbox');
  
 function getCookie(name) {
     const value = `; ${document.cookie}`
@@ -31,10 +27,9 @@ window.dmClick = function(){
   dmToggle();
 }
 
-window.dmToggle = function() { 
+window.dmToggle = function() {
   document.getElementById("dm_icon").src = dm_imgs[+dm];
-  document.body.style.backgroundColor = bgColor[+dm];
-  root.style.setProperty('--main-color', textColor[+dm]);
-  buttons.style.setProperty("background-color", dm ? "#000074" : "#FFFFFF");
-  textbox.style.setProperty("background-color", dm ? "#000074" : "#FFFFFF");
-} 
+  root.style.setProperty('--primary-color', dm ?  "#000074" : "#F1F1FF");
+  root.style.setProperty('--secondary-color', dm ? "#F1F1FF" : "#0000FF");
+  root.style.setProperty('--misc-color', dm ? "#000074" : "#FFFFFF");
+}
